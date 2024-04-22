@@ -38,17 +38,17 @@ export class PieChartComponent {
     },
     scales: {
       x: {
-        display: true,
+        display: false,
 
         grid: {
-          display: true,
+          display: false,
         },
         beginAtZero: true,
       },
       y: {
-        display: true,
+        display: false,
         grid: {
-          display: true,
+          display: false,
         },
         beginAtZero: true,
       },
