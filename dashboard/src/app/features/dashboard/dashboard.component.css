@@ -1,0 +1,7 @@
+.chart-img {
+  height: 450px;
+}
+
+.chart-img canvas {
+  height: 100% !important;
+}

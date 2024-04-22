@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row my-3">
+    <div class="col-6">
+      <!-- {{show(selectedChartType)}}
+      {{selectedChartType}} -->
+      <div class="d-flex align-items-center gap-3">
+        <h5 class="mb-0">Select Chart Type</h5>
+        <ng-select [items]="chartTypes" [(ngModel)]="selectedChartType" placeholder="Select a Chart Type">
+        </ng-select>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="chart-img" *ngIf="selectedChartType">
+        <div class="bar-chart" *ngIf="selectedChartType.value===1">
+          <app-bar-chart></app-bar-chart>
+        </div>
+        <div class="line-chart" *ngIf="selectedChartType.value===2">
+          <app-line-chart></app-line-chart>
+        </div>
+        <div class="pie-chart" *ngIf="selectedChartType.value===3">
+          <app-pie-chart></app-pie-chart>
+        </div>
+        <div class="doughnut-chart" *ngIf="selectedChartType.value===4">
+          <app-doughnut-chart></app-doughnut-chart>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
